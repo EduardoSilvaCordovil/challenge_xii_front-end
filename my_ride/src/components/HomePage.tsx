@@ -1,6 +1,12 @@
 import Form from "./Form";
+import facebook from "../assets/Facebook.png";
+import instagram from "../assets/Vector(1).png";
+import twitter from "../assets/Vector.png";
 import { Link } from "react-router-dom";
 const HomePage = () => {
+  const imageUrl =
+    "https://eduardopbcompass.s3.amazonaws.com/myrideimgs/Image(1).png";
+
   return (
     <div>
       <header className="header_navigation">
@@ -20,26 +26,65 @@ const HomePage = () => {
         </nav>
       </header>
 
-      <div className="container_ride">
-        <div id="item">
-          <h2>NEED A RIDE?</h2>
-          <p>Book with myRIDE now!</p>
+      <div className="main_container">
+        <div>
+          <img src={imageUrl} alt="S3 Image" />
         </div>
-        <div id="item" className="ride_browser">
-          <p className="p_input">Find a ride now</p>
-          <input className="input_area" type="text" placeholder="Your Pickup" />
-          <input
-            className="input_area"
-            type="text"
-            placeholder="You Destination"
-          />
-          <button className="browser_button">FIND A DRIVER</button>
+        <div className="container_ride">
+          <div id="item">
+            <h2>NEED A RIDE?</h2>
+            <p>Book with myRIDE now!</p>
+          </div>
+          <div id="item" className="ride_browser">
+            <p className="p_input">Find a ride now</p>
+            <input
+              className="input_area"
+              type="text"
+              placeholder="Your Pickup"
+            />
+            <input
+              className="input_area"
+              type="text"
+              placeholder="Your Destination"
+            />
+            <button className="browser_button">FIND A DRIVER</button>
+          </div>
         </div>
       </div>
+
       <Form />
       <footer>
         <div className="social_media">
           <p>MyRide Inc., 2nd Floor, New York, NY 10016</p>
+          <div className="redes_images">
+            <p>
+              <a
+                href="https://www.facebook.com/compass.uol/?locale=pt_BR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={facebook} />
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://www.instagram.com/compass.uol/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={instagram} />
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://x.com/compassuol"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitter} />
+              </a>
+            </p>
+          </div>
         </div>
         <div className="link">
           <div>
