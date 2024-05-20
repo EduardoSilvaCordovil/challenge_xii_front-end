@@ -10,6 +10,22 @@
  <img src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=for-the-badge&logo=PostCSS&logoColor=white" />
 </div>
 
+## Dependências necessárias:
+```json
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0"
+  }
+```
+
 ## Apresentação do projeto:
 
 Ao clicar nos ícones do Twitter, Instagram e Facebook, você será redirecionado(a) para as redes sociais da Compass. Já em relação ao demais links, eles direcionam à uma página 404. <br/>
