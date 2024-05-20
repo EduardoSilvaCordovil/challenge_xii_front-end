@@ -10,6 +10,30 @@
  <img src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=for-the-badge&logo=PostCSS&logoColor=white" />
 </div>
 
+## Arquivos de estilo:
+
+tailwind.config.js
+```json
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+postcss.configs.js
+```json
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+``
+
 ## Dependências necessárias:
 ```json
   "devDependencies": {
