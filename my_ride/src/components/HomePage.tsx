@@ -3,25 +3,26 @@ import facebook from "../assets/Facebook.png";
 import instagram from "../assets/Vector(1).png";
 import twitter from "../assets/Vector.png";
 import { Link } from "react-router-dom";
+
 const HomePage = () => {
-  const imageUrl =
-    "https://eduardopbcompass.s3.amazonaws.com/myrideimgs/Image(1).png";
+
+  const imageUrl = "https://eduardopbcompass.s3.amazonaws.com/myrideimgs/Image(1).png";
 
   return (
     <div>
       <header className="header_navigation">
         <nav>
           <p className="p-home">
-            <Link to="/my_ride/src/components/Error.tsx">Home</Link>
+            <Link to="/my_ride/src/components/Error">Home</Link>
           </p>
           <p>
-            <Link to="/my_ride/src/components/Error.tsx">Getting a Taxi</Link>
+            <Link to="/my_ride/src/components/Error">Getting a Taxi</Link>
           </p>
           <p>
-            <Link to="/my_ride/src/components/Error.tsx">Mobile App</Link>
+            <Link to="/my_ride/src/components/Error">Mobile App</Link>
           </p>
           <p>
-            <Link to="/my_ride/src/components/Error.tsx">Contact Us</Link>
+            <Link to="/my_ride/src/components/Error">Contact Us</Link>
           </p>
         </nav>
       </header>

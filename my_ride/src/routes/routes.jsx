@@ -1,14 +1,14 @@
-import Error from "../components/Error"
+import Error from "../components/Error";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
-    <Routes>
+      <Routes>
         <Route path="*" element={<Error />}></Route>
-    </Routes>
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default AppRoutes
+export default AppRoutes;
